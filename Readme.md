@@ -16,4 +16,4 @@ dotnet run --configuration Release
 ```
 
 ## Result
-![Benchmark](benchmark.png)
+![Benchmark](benchmark.jpg)
