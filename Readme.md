@@ -16,4 +16,8 @@ dotnet run --configuration Release
 ```
 
 ## Result
+Member inclube array
 ![Benchmark](benchmark.jpg)
+
+Member inclube List
+![Benchmark](benchmark2.jpg)

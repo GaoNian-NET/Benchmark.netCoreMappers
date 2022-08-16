@@ -1,17 +1,19 @@
-﻿namespace ObjectsMapperBenchmark
+﻿using System.Collections.Generic;
+
+namespace ObjectsMapperBenchmark
 {
     public class SpotifyAlbum
     {
         public string AlbumType { get; set; }
-        public Artist[] Artists { get; set; }
+        public List<Artist> Artists { get; set; }
         public string[] AvailableMarkets { get; set; }
-        public Copyright[] Copyrights { get; set; }
+        public List<Copyright> Copyrights { get; set; }
         public ExternalIds ExternalIds { get; set; }
         public ExternalUrls ExternalUrls { get; set; }
         public object[] Genres { get; set; }
         public string Href { get; set; }
         public string Id { get; set; }
-        public Image[] Images { get; set; }
+        public List<Image> Images { get; set; }
         public string Name { get; set; }
         public long Popularity { get; set; }
         public string ReleaseDate { get; set; }
@@ -24,7 +26,7 @@
     public class Tracks
     {
         public string Href { get; set; }
-        public Item[] Items { get; set; }
+        public List<Item> Items { get; set; }
         public long Limit { get; set; }
         public object Next { get; set; }
         public long Offset { get; set; }
@@ -34,7 +36,7 @@
 
     public class Item
     {
-        public Artist[] Artists { get; set; }
+        public List<Artist> Artists { get; set; }
         public string[] AvailableMarkets { get; set; }
         public long DiscNumber { get; set; }
         public long DurationMs { get; set; }

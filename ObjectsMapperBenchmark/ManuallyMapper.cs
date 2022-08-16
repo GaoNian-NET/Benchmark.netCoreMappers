@@ -20,13 +20,13 @@ namespace ObjectsMapperBenchmark
                     Name = spotifyAlbumDtoArtist.Name,
                     Type = spotifyAlbumDtoArtist.Type,
                     Uri = spotifyAlbumDtoArtist.Uri
-                }).ToArray(),
+                }).ToList(),
                 AvailableMarkets = spotifyAlbumDto.AvailableMarkets,
                 Copyrights = spotifyAlbumDto.Copyrights.Select(spotifyAlbumDtoCopyright => new Copyright()
                 {
                     Text = spotifyAlbumDtoCopyright.Text,
                     Type = spotifyAlbumDtoCopyright.Type
-                }).ToArray(),
+                }).ToList(),
                 ExternalIds = new ExternalIds()
                 {
                     Upc = spotifyAlbumDto.ExternalIds.Upc
@@ -43,7 +43,7 @@ namespace ObjectsMapperBenchmark
                     Height = spotifyAlbumDtoImage.Height,
                     Url = spotifyAlbumDtoImage.Url,
                     Width = spotifyAlbumDtoImage.Width
-                }).ToArray(),
+                }).ToList(),
                 Name = spotifyAlbumDto.Name,
                 Popularity = spotifyAlbumDto.Popularity,
                 ReleaseDate = spotifyAlbumDto.ReleaseDate,
@@ -64,7 +64,7 @@ namespace ObjectsMapperBenchmark
                             Name = spotifyAlbumDtoTracksItemArtist.Name,
                             Type = spotifyAlbumDtoTracksItemArtist.Type,
                             Uri = spotifyAlbumDtoTracksItemArtist.Uri
-                        }).ToArray(),
+                        }).ToList(),
                         AvailableMarkets = spotifyAlbumDtoTracksItem.AvailableMarkets,
                         DiscNumber = spotifyAlbumDtoTracksItem.DiscNumber,
                         DurationMs = spotifyAlbumDtoTracksItem.DurationMs,
@@ -80,7 +80,7 @@ namespace ObjectsMapperBenchmark
                         TrackNumber = spotifyAlbumDtoTracksItem.TrackNumber,
                         Type = spotifyAlbumDtoTracksItem.Type,
                         Uri = spotifyAlbumDtoTracksItem.Uri
-                    }).ToArray(),
+                    }).ToList(),
                     Limit = spotifyAlbumDto.Tracks.Limit,
                     Next = spotifyAlbumDto.Tracks.Next,
                     Offset = spotifyAlbumDto.Tracks.Offset,
