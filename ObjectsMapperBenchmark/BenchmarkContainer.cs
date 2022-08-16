@@ -133,5 +133,11 @@ namespace ObjectsMapperBenchmark
         {
             _mapperlyMapper.Map(_spotifyAlbumDto);
         }
+
+        [Benchmark]
+        public void MapperToolkit()
+        {
+            _spotifyAlbumDto.MapperToSpotifyAlbum();
+        }
     }
 }
